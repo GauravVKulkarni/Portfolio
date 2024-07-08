@@ -3,20 +3,22 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif ;
+    background: rgb(4,6,20);
 }
 
 nav {
     height: 60px;
     display: flex;
-    background: #fdcc04;
+    background: rgb(4,6,20);
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+
 }
 
 .logo {
-    color: #000000;
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 1.5rem;
@@ -24,12 +26,12 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     padding: 0 1.5rem;
 }
 
 .hero {
-    background: #fdcc04;
+    background: rgb(4,6,20);
 }
 
 .herocontainer {
@@ -44,7 +46,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #000000;
+    color: #ffffff;
     padding: 0rem 2rem;
 }
 
@@ -58,12 +60,21 @@ nav a {
     font-size: 1.5rem;
 }
 
+.navbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #000000;
+}
+
 button {
+    margin-top: 2rem;
     padding: 1rem 3rem;
     font-size: 1rem;
     border: none;
-    color: #fdcc04;
-    background: #000000;
+    background: #fdcc04;
+    color: #000000;
     cursor: pointer;
 }
 
@@ -77,6 +88,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     padding: 0rem 2rem;
+    color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
