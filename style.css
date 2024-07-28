@@ -2,6 +2,10 @@
     background-color: #0A061E;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     background-color: #0A061E;
     font-family: 'IBM Plex Mono', monospace;
@@ -26,7 +30,7 @@ body{
 
 
 nav{
-    position: absolute;
+    position: fixed;
     top: 0;
     scroll-behavior: unset;
     width: 60%;
@@ -55,6 +59,10 @@ nav{
 
 .navItem{
     margin-left: 48px;
+}
+
+.navbar-scrolled {
+    border-bottom: 2px solid #A7ABC6; /* Adjust the border style as needed */
 }
 
 .logo{
@@ -136,7 +144,7 @@ nav{
 .icon img{
     width: 28px;
     height: 28px;
-    
+
 }
 
 a{
@@ -162,6 +170,7 @@ p{
 }
 
 footer{
+    bottom: 0;
     padding-top: 64px;
     padding-bottom: 24px;
     justify-content: center; 

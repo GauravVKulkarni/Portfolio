@@ -14,7 +14,7 @@
     <div class="main-container">
         <nav>
             <div class="navbox">
-                <a href="#">
+                <a href="index.html">
                     <div>
                         <h2  style="color: #FFD400;">
                             Gaurav
@@ -23,13 +23,13 @@
                 </a>
                 <div class="navItems">
                     <div class="navItem">
-                        <a href="#">Projects</a>
+                        <a href="#proj">Projects</a>
                     </div>
                     <div class="navItem">
-                        <a href="#">About</a>
+                        <a href="about.html">About</a>
                     </div>
                     <div class="navItem">
-                        <a href="#">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </div>
                 </div>
             </div>
@@ -52,10 +52,10 @@
                                 <a class="icon" href="https://github.com/gauravvkulkarni" target="blank">
                                     <img src="src/github-light.png">
                                 </a>
-                                <a class="icon" href="https://github.com/gauravvkulkarni" target="blank">
+                                <a class="icon" href="https://www.linkedin.com/in/gaurav-kulkarni-424a45229" target="blank">
                                     <img src="src/linkedin-light.png">
                                 </a>
-                                <a class="icon" href="https://github.com/gauravvkulkarni" target="blank">
+                                <a class="icon" href="https://x.com/GauravK_9211" target="blank">
                                     <img src="src/x-light.png">
                                 </a>
                             </div>
@@ -71,50 +71,59 @@
                     <p>
                         Let's connect!
                     </p>
-                    <div class="links">
-                       
-                    </div>
                 </div>
                 <div class="tech-stack-link">
-                    <a href="#">
+                    <a href="about.html">
                         <p class="yellow-link">
                             Tech stack &amp; Skills <img src="src/arrow-outward.svg">
                         </p>
                     </a>
                 </div>
             </div>
-            <div class="projects">
-                <h1>
-                    Projects
-                </h1>
-                <div class="project">
+            <section id="proj">
+                <div class="projects">
+                    <h1>
+                        Projects
+                    </h1>
+                    <div class="project">
+                        <div class="project-title">
+                            <h2>ResearchHouse</h2>
+                        </div>
+                        <div class="project-description">
+                            <p>
+                                ResearchHouse is an online platform for Post Graduation Dissertation management built using ReactJS and NodeJS. It was presented by my team at Smart India Hackathon 2023 Finals.
+                            </p>
+                        </div>
+                        <div class="project-links">
+                            <p class="yellow-link">
+                                <a href="https://github.com/GauravVKulkarni/ResearchHouse.git" target="blank">
+                                        GitHub <img src="src/arrow-outward.svg">
+                                </a>
+                                <a style="margin-left: 24px;" href="https://github.com/gauravvkulkarni" target="blank">
+                                        Case Study <img src="src/arrow-outward.svg">
+                                </a>
+                            </p>
+                        </div> 
+                    </div>
                     <div class="project-title">
-                        <h2>ResearchHouse</h2>
+                        <h2>More Coming Soon...</h2>
                     </div>
-                    <div class="project-description">
-                        <p>
-                            ResearchHouse is an online platform for Post Graduation Dissertation management built using ReactJS and NodeJS. It was presented by my team at Smart India Hackathon 2023 Finals.
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <p class="yellow-link">
-                            <a href="https://github.com/GauravVKulkarni/ResearchHouse.git" target="blank">
-                                    GitHub <img src="src/arrow-outward.svg">
-                            </a>
-                            <a style="margin-left: 24px;" href="https://github.com/gauravvkulkarni" target="blank">
-                                    Case Study <img src="src/arrow-outward.svg">
-                            </a>
-                        </p>
-                    </div> 
                 </div>
-                <div class="project-title">
-                    <h2>More Coming Soon...</h2>
-                </div>
-            </div>
+            </section>
         </div>
         <footer>
             <p>Made with 🧠 by Gaurav</p>
         </footer>
     </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 0) {
+                nav.classList.add('navbar-scrolled');
+            } else {
+                nav.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
