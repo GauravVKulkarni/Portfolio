@@ -133,6 +133,12 @@ nav{
     padding-top: 48px
 }
 
+.icon img{
+    width: 28px;
+    height: 28px;
+    
+}
+
 a{
     width: max-content;
     height: max-content;
